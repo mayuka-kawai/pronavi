@@ -1,0 +1,33 @@
+/* news */
+#news {
+    text-align: center;
+    padding-top: 120px;
+    margin-top: -100px;
+
+    .container {
+        max-width: 800px;
+    }
+    
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        width: 600px;
+        border-top: 1px dotted #333;
+        margin: 0 auto;
+        text-align: start;
+        font-size: 0.87rem;
+
+        dt {
+            width: 30%;
+            padding: 15px;
+            height: calc(100% /3);
+            border-bottom: 1px dotted #333;
+        }
+
+        dd {
+            width: 70%;
+            padding: 15px;
+            border-bottom: 1px dotted #333;
+        }
+    }
+}

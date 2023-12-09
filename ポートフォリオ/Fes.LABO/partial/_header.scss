@@ -1,0 +1,137 @@
+/* header */
+
+header {
+    display: flex;
+    z-index: 10;
+    width: 100%;
+
+    .header-top {
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+        /* スクロール後ナビゲーション */
+        .black {
+            background-color: #fff;
+            transition: all 0.5s ease;
+            width: 100%;
+        
+            a {
+                color: #333;
+        
+                .logo-w {
+                    display: none;
+                }
+        
+                .logo-b {
+                    display: inline-block;
+                }
+            }
+        }
+
+    /* header　ロゴ */
+    h1 {
+        // padding: 10px 40px;
+        transition: all 0.5s ease;
+        position: fixed;
+        top: 7px;
+        left: 40px;
+
+        img {
+            width: 120px;
+        }
+
+        .logo-b {
+            display: none;
+        }
+    }
+
+    /* ナビゲーション */
+    nav {
+        position: fixed;
+        top: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.5s ease;
+
+        ul {
+            display: flex;
+
+            li {
+                font-size: 0.75rem;
+                padding: 10px 15px;
+            }
+        }
+    }
+
+    /* SNSリンクボタン */
+    .sns {
+        position: fixed;
+        z-index: 20;
+        bottom: 20px;
+        right: 0;
+        padding: 10px 10px 0 10px;
+        background-color: rgba($color: #fff, $alpha: 0.3);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: all 0.5s ease;
+
+        ul {
+            li {
+                padding-bottom: 10px;
+
+                a {
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .sns-b {
+        position: fixed;
+        z-index: 20;
+        bottom: 20px;
+        right: 0;
+        padding: 10px 10px 0 10px;
+        background-color: rgba($color: #000, $alpha: 0.5);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: all 0.5s ease;
+
+        ul {
+            li {
+                padding-bottom: 10px;
+
+                a {
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bg-b {
+        background-color: #333;
+        opacity: 0.7;
+    }
+
+
+    .sp-menu {
+        display: none;
+    }
+
+    #mask {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+    }
+}

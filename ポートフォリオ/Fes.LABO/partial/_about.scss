@@ -1,0 +1,33 @@
+/* about */
+#about {
+    text-align: center;
+    padding-top: 120px;
+    margin-top: -100px;
+
+
+    .about-text {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-right: 40px;
+        }
+
+        .text {
+            text-align: start;
+
+            p:nth-of-type(1) {
+                margin-bottom: 20px;
+                font-weight: bold;
+                font-size: 1.25rem;
+            }
+
+            p:nth-of-type(2) {
+                font-size: 0.875rem;
+            }
+        }
+    }
+}

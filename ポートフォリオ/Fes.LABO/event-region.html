@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fes.LABO</title>
+    <meta name="description" content="Fes.LABOは、音楽フェスやイベント情報盛りだくさん！新しいトレンドやフェスの新着情報を発見できること間違いなし！">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Monomaniac+One&family=Zen+Maru+Gothic:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="header-top event-header">
+                <h1>
+                    <a href="index.html"><img class="logo-w" src="img/logo.PNG"></a>
+                    <a href="index.html"><img class="logo-b" src="img/logo-b.PNG"></a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about">ABOUT</a></li>
+                        <li><a href="index.html#news">NEWS</a></li>
+                        <li><a href="event-list.html">EVENTS</a></li>
+                        <li><a href="column-list.html">COLUMN</a></li>
+                        <li><a href="index.html#qa">Q&A</a></li>
+                        <li><a href="index.html#request">REQUEST</a></li>
+                    </ul>
+                </nav>
+                <div class="sp-menu">
+                    <div class="nav-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p>MENU</p>
+                </div>
+
+                <div id="mask"></div>
+            </div>
+    
+            <div class="sns-b">
+                <ul>
+                    <li><a href="https://twitter.com"><img src="img/x_logo.svg"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="img/Instagram_logo.svg"></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="img/youtube_logo.png"></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section id="maivisual">
+                <div class="event-list-page">
+                    <div class="container">
+                        <h2 class="sec-title">フェス一覧</h2>
+                        <div class="filter">
+                            <div class="area filter-item">
+                                <p>地域</p>
+                                <select name="area" id="area-select" class="form-select js-filter" >
+                                    <option value="all">全て</option>
+                                </select>
+                            </div>
+                            <div class="prefecture filter-item">
+                                <p>都道府県</p>
+                                <select name="prefecture" id="prefecture-select" class="form-select js-filter" >
+                                    <option value="all">全て</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="event-list">
+                            <p class="px-3"><span class="js-filter-msg"></span></p>
+                            <ul class="js-filter-items">
+                                <li class="event-link js-filter-item" data-area="関東地方" data-prefecture="千葉県">
+                                    <a href="event1.html">
+                                        <div class="event-item">
+                                            <img src="img/CDJ2324_logo.jpg">
+                                            <div class="event-text">
+                                                <p>COUNT DOWN JAPAN 23/24</p>
+                                                <p>2023/12/28,29,30,31-1/1</p>
+                                                <p>千葉県　幕張メッセ</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="event-link js-filter-item" data-area="関東地方" data-prefecture="埼玉県">
+                                    <a href="event2.html">
+                                        <div class="event-item">
+                                            <img src="img/vivala2024.jpeg">
+                                            <div class="event-text">
+                                                <p>VIVA LA ROCK 2024</p>
+                                                <p>2024/05/03,04,05,06</p>
+                                                <p>埼玉県　さいたまスーパーアリーナ</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="index.html" class="btn">Back To Main Page</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; Fes.LABO</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+/* Q&A */
+#qa {
+    text-align: center;
+    padding-top: 120px;
+    margin-top: -100px;
+    width: 100%;
+
+    .container {
+        max-width: 800px;
+    }
+
+    .question {
+        text-align: start;
+        cursor: pointer;
+        
+
+        .q-text {
+            position: relative;
+            background-color: #E0FCF8;
+            display: inline-block;
+            min-height: 60px;
+            width: 100%;
+            border-radius: 30px;
+
+            p {
+                padding: 18px 10px 18px 70px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            
+            span {
+                position: absolute;
+                display: inline-block;
+                width: 60px;
+                background-color: #519A8F;
+                color: #fff;
+                line-height: 60px;
+                border-radius: 30px;
+                text-align: center;
+                margin-right: 10px;
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .answer {
+        text-align: start;
+        display: none;
+        cursor: pointer;
+
+        .a-text {
+            position: relative;
+            background-color: #FFEFE3;
+            display: inline-block;
+            min-height: 60px;
+            width: 100%;
+            align-items: center;
+            border-radius: 30px;
+            margin-left: 60px;
+            width: calc(100% - 60px);
+            
+            p {
+                padding: 18px 10px 18px 70px;
+            }
+            
+            span {
+                position: absolute;
+                display: inline-block;
+                width: 60px;
+                background-color: #FC9C53;
+                color: #fff;
+                line-height: 60px;
+                border-radius: 30px;
+                text-align: center;
+                margin-right: 10px;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
